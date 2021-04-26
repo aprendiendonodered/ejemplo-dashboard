@@ -161,11 +161,11 @@
     {
         "id": "5f910634.44f3e8",
         "type": "ui_group",
-        "name": "Formulario",
+        "name": "Menú",
         "tab": "e919f749.380228",
         "order": 1,
         "disp": true,
-        "width": 4,
+        "width": "4",
         "collapse": false
     },
     {
@@ -258,11 +258,11 @@
         "z": "429ad46d.06bf9c",
         "name": "",
         "group": "41d201bf.153b3",
-        "order": 4,
+        "order": 3,
         "width": 4,
-        "height": 3,
+        "height": 2,
         "gtype": "gage",
-        "title": "Raspi2",
+        "title": "",
         "label": "Grados",
         "format": "{{value|number:2}} ºC",
         "min": 0,
@@ -274,8 +274,8 @@
         ],
         "seg1": "65",
         "seg2": "80",
-        "x": 310,
-        "y": 160,
+        "x": 290,
+        "y": 400,
         "wires": []
     },
     {
@@ -284,10 +284,10 @@
         "z": "429ad46d.06bf9c",
         "name": "",
         "group": "41d201bf.153b3",
-        "order": 2,
+        "order": 4,
         "width": 8,
-        "height": 6,
-        "label": "chart",
+        "height": 4,
+        "label": "Temperatura",
         "chartType": "line",
         "legend": "false",
         "xformat": "HH:mm:ss",
@@ -315,8 +315,8 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 310,
-        "y": 220,
+        "x": 690,
+        "y": 480,
         "wires": [
             []
         ]
@@ -326,30 +326,30 @@
         "type": "ui_form",
         "z": "429ad46d.06bf9c",
         "name": "",
-        "label": "",
+        "label": "Guarda datos",
         "group": "5f910634.44f3e8",
-        "order": 4,
+        "order": 5,
         "width": 0,
         "height": 0,
         "options": [
             {
-                "label": "",
-                "value": "nombre",
-                "type": "text",
+                "label": "dato1",
+                "value": "dato1",
+                "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "",
-                "value": "apellido",
-                "type": "text",
-                "required": false,
+                "label": "dato2",
+                "value": "dato2",
+                "type": "number",
+                "required": true,
                 "rows": null
             }
         ],
         "formValue": {
-            "nombre": "",
-            "apellido": ""
+            "dato1": "",
+            "dato2": ""
         },
         "payload": "",
         "submit": "submit",
@@ -357,10 +357,12 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 370,
-        "y": 500,
+        "x": 100,
+        "y": 180,
         "wires": [
-            []
+            [
+                "67ee9d58.5ef894"
+            ]
         ]
     },
     {
@@ -388,8 +390,8 @@
         "officon": "",
         "offcolor": "",
         "animate": false,
-        "x": 350,
-        "y": 620,
+        "x": 90,
+        "y": 640,
         "wires": [
             []
         ]
@@ -411,8 +413,8 @@
         "onstart": false,
         "scope": "local",
         "tooltip": "",
-        "x": 830,
-        "y": 440,
+        "x": 690,
+        "y": 360,
         "wires": [
             []
         ]
@@ -436,8 +438,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 670,
-        "y": 440,
+        "x": 510,
+        "y": 360,
         "wires": [
             [
                 "63b2f095.71435"
@@ -472,12 +474,12 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 110,
-        "y": 160,
+        "x": 90,
+        "y": 400,
         "wires": [
             [
                 "c84bd35c.6b582",
-                "12a3f0c9.9a412f"
+                "bbcaa4be.53c628"
             ]
         ]
     },
@@ -493,12 +495,12 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 100,
-        "y": 240,
+        "x": 80,
+        "y": 480,
         "wires": [
             [
-                "12a3f0c9.9a412f",
-                "231609d.e3e78f6"
+                "231609d.e3e78f6",
+                "bbcaa4be.53c628"
             ]
         ]
     },
@@ -565,8 +567,8 @@
         "z": "429ad46d.06bf9c",
         "name": "",
         "events": "all",
-        "x": 460,
-        "y": 320,
+        "x": 480,
+        "y": 580,
         "wires": [
             []
         ]
@@ -590,8 +592,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 250,
-        "y": 320,
+        "x": 270,
+        "y": 580,
         "wires": [
             [
                 "24fda728.86d7b8"
@@ -617,42 +619,12 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 260,
-        "y": 360,
+        "x": 280,
+        "y": 620,
         "wires": [
             [
                 "24fda728.86d7b8"
             ]
-        ]
-    },
-    {
-        "id": "82546d21.1a295",
-        "type": "ui_form",
-        "z": "429ad46d.06bf9c",
-        "name": "",
-        "label": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "value": "",
-                "label": "",
-                "type": "",
-                "required": true
-            }
-        ],
-        "formValue": {},
-        "payload": "",
-        "submit": "submit",
-        "cancel": "cancel",
-        "topic": "topic",
-        "topicType": "msg",
-        "splitLayout": "",
-        "x": 350,
-        "y": 560,
-        "wires": [
-            []
         ]
     },
     {
@@ -661,11 +633,11 @@
         "z": "429ad46d.06bf9c",
         "name": "",
         "group": "41d201bf.153b3",
-        "order": 3,
+        "order": 2,
         "width": 4,
-        "height": 3,
+        "height": 2,
         "gtype": "gage",
-        "title": "Raspi1",
+        "title": "",
         "label": "Grados",
         "format": "{{value|number:2}} ºC",
         "min": 0,
@@ -677,8 +649,8 @@
         ],
         "seg1": "65",
         "seg2": "80",
-        "x": 310,
-        "y": 280,
+        "x": 290,
+        "y": 520,
         "wires": []
     },
     {
@@ -722,7 +694,7 @@
         "adjAmount": 0,
         "adjType": "days",
         "adjDir": "add",
-        "format": "dddd, MMMM Do YYYY, h:mm:ss a",
+        "format": "dddd, MMMM Do YYYY, H:mm:ss",
         "locale": "es",
         "output": "",
         "outputType": "msg",
@@ -792,8 +764,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 670,
-        "y": 480,
+        "x": 510,
+        "y": 400,
         "wires": [
             [
                 "59a1aff3.29591"
@@ -817,8 +789,8 @@
         "onstart": false,
         "scope": "local",
         "tooltip": "",
-        "x": 840,
-        "y": 480,
+        "x": 680,
+        "y": 400,
         "wires": [
             []
         ]
@@ -844,11 +816,289 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 110,
-        "y": 320,
+        "x": 130,
+        "y": 580,
         "wires": [
             [
                 "20a5af8e.ec8e5"
+            ]
+        ]
+    },
+    {
+        "id": "bbcaa4be.53c628",
+        "type": "change",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "$substring(topic, 29,12)\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "12a3f0c9.9a412f"
+            ]
+        ]
+    },
+    {
+        "id": "93fd7a3f.3afb38",
+        "type": "ui_button",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "group": "5f910634.44f3e8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Limpia Gráfica",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 300,
+        "y": 480,
+        "wires": [
+            [
+                "e94d99c6.6c1628"
+            ]
+        ]
+    },
+    {
+        "id": "e94d99c6.6c1628",
+        "type": "change",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[]",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 480,
+        "wires": [
+            [
+                "12a3f0c9.9a412f"
+            ]
+        ]
+    },
+    {
+        "id": "2e4f1683.83b3aa",
+        "type": "file",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "filename": "/home/jose/imagenes/datos_form.csv",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 560,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67ee9d58.5ef894",
+        "type": "csv",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "once",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "2e4f1683.83b3aa"
+            ]
+        ]
+    },
+    {
+        "id": "d2de298a.966b58",
+        "type": "ui_button",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "group": "5f910634.44f3e8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Ver Datos",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 80,
+        "y": 220,
+        "wires": [
+            [
+                "ecb43464.0609c8",
+                "781d7d6c.1bd114"
+            ]
+        ]
+    },
+    {
+        "id": "dea60b4e.358868",
+        "type": "ui_chart",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "group": "41d201bf.153b3",
+        "order": 5,
+        "width": 8,
+        "height": 4,
+        "label": "Datos Guardados",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 350,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ecb43464.0609c8",
+        "type": "file in",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "filename": "/home/jose/imagenes/datos_form.csv",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "399d4fa2.37da3"
+            ]
+        ]
+    },
+    {
+        "id": "399d4fa2.37da3",
+        "type": "csv",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 530,
+        "y": 220,
+        "wires": [
+            [
+                "72f0665e.21c628"
+            ]
+        ]
+    },
+    {
+        "id": "72f0665e.21c628",
+        "type": "split",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "topic",
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "dea60b4e.358868"
+            ]
+        ]
+    },
+    {
+        "id": "781d7d6c.1bd114",
+        "type": "change",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[]",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 160,
+        "y": 320,
+        "wires": [
+            [
+                "dea60b4e.358868"
             ]
         ]
     }
