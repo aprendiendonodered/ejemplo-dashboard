@@ -14,6 +14,20 @@
         "info": ""
     },
     {
+        "id": "429ad46d.06bf9c",
+        "type": "tab",
+        "label": "dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "81a52bfc.a267b8",
+        "type": "tab",
+        "label": "captura de pantalla",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "a82ff252.80d08",
         "type": "mqtt-broker",
         "name": "Broker Seguro",
@@ -90,6 +104,216 @@
         "sessionExpiry": ""
     },
     {
+        "id": "e919f749.380228",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9bbfb1a1.a5f53",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#75390b",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Dashboard Ejemplo",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7b566a7c.f8e974",
+        "type": "ui_group",
+        "name": "Fecha",
+        "tab": "e919f749.380228",
+        "order": 3,
+        "disp": true,
+        "width": 9,
+        "collapse": false
+    },
+    {
+        "id": "41d201bf.153b3",
+        "type": "ui_group",
+        "name": "Grafica",
+        "tab": "e919f749.380228",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a0405003.04bf3",
+        "type": "ui_tab",
+        "name": "Segunda",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3c7584ca.e5ea8c",
+        "type": "ui_group",
+        "name": "Color",
+        "tab": "a0405003.04bf3",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5f910634.44f3e8",
+        "type": "ui_group",
+        "name": "Formulario",
+        "tab": "e919f749.380228",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d6f3a387.7dda",
+        "type": "ui_tab",
+        "name": "Tercera",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a0952af6.733448",
+        "type": "ui_group",
+        "name": "Pulsadores",
+        "tab": "d6f3a387.7dda",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "92639f17.0d975",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "7b566a7c.f8e974",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "377251d7.a9937e",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "7b566a7c.f8e974",
+        "order": 5,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "fc24b8b2.6e2528",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "7b566a7c.f8e974",
+        "order": 6,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "6441641f.f6856c",
+        "type": "ui_group",
+        "name": "Group 4",
+        "tab": "e919f749.380228",
+        "order": 4,
+        "disp": true,
+        "width": 6
+    },
+    {
         "id": "fedb85bb.f74cc8",
         "type": "flightradar24",
         "z": "c323fd5d.6b95d",
@@ -141,15 +365,15 @@
         "type": "debug",
         "z": "c323fd5d.6b95d",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 510,
-        "y": 80,
+        "x": 490,
+        "y": 100,
         "wires": []
     },
     {
@@ -466,5 +690,618 @@
         "x": 740,
         "y": 440,
         "wires": []
+    },
+    {
+        "id": "d648764d.80e298",
+        "type": "http request",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "http://www.navarra.es/Templates/Navarra/Especificas/CamarasTrafico/CamaraTraficoHandler.ashx?Img=carreteras\\ARETA_PA_30_5_700.JPG",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 520,
+        "y": 60,
+        "wires": [
+            [
+                "bca06850.5a7858",
+                "76c2ee38.dec8",
+                "c289fed4.96272",
+                "dca608c3.ae5ca8"
+            ]
+        ]
+    },
+    {
+        "id": "bca06850.5a7858",
+        "type": "debug",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "76c2ee38.dec8",
+        "type": "image",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 870,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b85066b7.dd6f48",
+        "type": "ui_text",
+        "z": "429ad46d.06bf9c",
+        "group": "7b566a7c.f8e974",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 330,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c84bd35c.6b582",
+        "type": "ui_gauge",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "group": "7b566a7c.f8e974",
+        "order": 2,
+        "width": 4,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Raspi2",
+        "label": "Grados",
+        "format": "{{value|number:2}} ºC",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "65",
+        "seg2": "80",
+        "x": 290,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "12a3f0c9.9a412f",
+        "type": "ui_chart",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "group": "41d201bf.153b3",
+        "order": 1,
+        "width": 6,
+        "height": 6,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#e9afb3",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 290,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d36c383.b6121c",
+        "type": "ui_colour_picker",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "label": "",
+        "group": "3c7584ca.e5ea8c",
+        "format": "hex",
+        "outformat": "string",
+        "showSwatch": true,
+        "showPicker": false,
+        "showValue": false,
+        "showHue": false,
+        "showAlpha": false,
+        "showLightness": true,
+        "square": "false",
+        "dynOutput": "false",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9802963b.a01cb8",
+        "type": "ui_form",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "label": "",
+        "group": "5f910634.44f3e8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "",
+                "value": "nombre",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "",
+                "value": "apellido",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "nombre": "",
+            "apellido": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "x": 510,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad709e2.141126",
+        "type": "ui_switch",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "a0952af6.733448",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "x": 530,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98f66c9f.e8c5c",
+        "type": "inject",
+        "z": "81a52bfc.a267b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "4c751894.1f93b8"
+            ]
+        ]
+    },
+    {
+        "id": "4c751894.1f93b8",
+        "type": "http request",
+        "z": "81a52bfc.a267b8",
+        "name": "",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "http://www.navarra.es/Templates/Navarra/Especificas/CamarasTrafico/CamaraTraficoHandler.ashx?Img=carreteras\\ARETA_PA_30_5_700.JPG&random=665858392",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "8277020f.f6d1e"
+            ]
+        ]
+    },
+    {
+        "id": "8277020f.f6d1e",
+        "type": "image",
+        "z": "81a52bfc.a267b8",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 520,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "63b2f095.71435",
+        "type": "ui_media",
+        "z": "429ad46d.06bf9c",
+        "group": "7b566a7c.f8e974",
+        "name": "",
+        "width": 9,
+        "height": 7,
+        "order": 1,
+        "category": "",
+        "file": "",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 930,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c289fed4.96272",
+        "type": "change",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mimetype",
+                "pt": "msg",
+                "to": "image/jpeg",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 300,
+        "wires": [
+            [
+                "63b2f095.71435"
+            ]
+        ]
+    },
+    {
+        "id": "dca608c3.ae5ca8",
+        "type": "file",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "filename": "/home/jose/imagenes/carretera.jpeg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 610,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d43d89.0e31c28",
+        "type": "mqtt in",
+        "z": "429ad46d.06bf9c",
+        "name": "Temp",
+        "topic": "aprendiendonodered21/enrique/raspberrypi2/enrique/Temperatura",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "a82ff252.80d08",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 260,
+        "wires": [
+            [
+                "c84bd35c.6b582",
+                "12a3f0c9.9a412f"
+            ]
+        ]
+    },
+    {
+        "id": "b74428fc.f74e68",
+        "type": "mqtt in",
+        "z": "429ad46d.06bf9c",
+        "name": "Temp2",
+        "topic": "aprendiendonodered21/enrique/raspberrypi1/enrique/Temperatura",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "a82ff252.80d08",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 80,
+        "y": 340,
+        "wires": [
+            [
+                "12a3f0c9.9a412f"
+            ]
+        ]
+    },
+    {
+        "id": "3b4a40d8.9a1b6",
+        "type": "ui_button",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "group": "5f910634.44f3e8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "button",
+        "tooltip": "",
+        "color": "{{payload}}",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 350,
+        "y": 60,
+        "wires": [
+            [
+                "d648764d.80e298"
+            ]
+        ]
+    },
+    {
+        "id": "8082af76.c0428",
+        "type": "ui_button",
+        "z": "429ad46d.06bf9c",
+        "name": "cambia",
+        "group": "5f910634.44f3e8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "cambia color",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "red",
+        "payloadType": "str",
+        "topic": "image",
+        "topicType": "flow",
+        "x": 260,
+        "y": 160,
+        "wires": [
+            [
+                "3b4a40d8.9a1b6",
+                "e77eaf26.c25c5"
+            ]
+        ]
+    },
+    {
+        "id": "e77eaf26.c25c5",
+        "type": "debug",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ed48e8a4.b85d58",
+        "type": "inject",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "8082af76.c0428"
+            ]
+        ]
+    },
+    {
+        "id": "24fda728.86d7b8",
+        "type": "ui_ui_control",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "events": "all",
+        "x": 280,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20a5af8e.ec8e5",
+        "type": "ui_button",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "group": "5f910634.44f3e8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "ocultar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"group\":{\"hide\":[\"Home_Fecha\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 440,
+        "wires": [
+            [
+                "24fda728.86d7b8"
+            ]
+        ]
+    },
+    {
+        "id": "202e2ccf.5d9734",
+        "type": "ui_button",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "group": "5f910634.44f3e8",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "mostrar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"group\":{\"show\":[\"Home_Fecha\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 520,
+        "wires": [
+            [
+                "24fda728.86d7b8"
+            ]
+        ]
+    },
+    {
+        "id": "82546d21.1a295",
+        "type": "ui_form",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "label": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "value": "",
+                "label": "",
+                "type": "",
+                "required": true
+            }
+        ],
+        "formValue": {},
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "x": 460,
+        "y": 360,
+        "wires": [
+            []
+        ]
     }
 ]
