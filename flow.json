@@ -33,31 +33,6 @@
         "sessionExpiry": ""
     },
     {
-        "id": "f03b2c3c.3f97d",
-        "type": "mqtt-broker",
-        "name": "aedes - Enrique",
-        "broker": "enriquecrespo.com",
-        "port": "1884",
-        "clientid": "",
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": "",
-        "willMsg": {},
-        "sessionExpiry": ""
-    },
-    {
         "id": "e919f749.380228",
         "type": "ui_tab",
         "name": "Home",
@@ -166,11 +141,11 @@
     {
         "id": "7b566a7c.f8e974",
         "type": "ui_group",
-        "name": "Fecha",
+        "name": "Areta",
         "tab": "e919f749.380228",
         "order": 3,
         "disp": true,
-        "width": 9,
+        "width": 10,
         "collapse": false
     },
     {
@@ -180,26 +155,7 @@
         "tab": "e919f749.380228",
         "order": 2,
         "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "a0405003.04bf3",
-        "type": "ui_tab",
-        "name": "Segunda",
-        "icon": "dashboard",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "3c7584ca.e5ea8c",
-        "type": "ui_group",
-        "name": "Color",
-        "tab": "a0405003.04bf3",
-        "order": 1,
-        "disp": true,
-        "width": "6",
+        "width": 8,
         "collapse": false
     },
     {
@@ -209,13 +165,13 @@
         "tab": "e919f749.380228",
         "order": 1,
         "disp": true,
-        "width": "6",
+        "width": 4,
         "collapse": false
     },
     {
         "id": "d6f3a387.7dda",
         "type": "ui_tab",
-        "name": "Tercera",
+        "name": "Otra Tab",
         "icon": "dashboard",
         "order": 3,
         "disabled": false,
@@ -232,31 +188,14 @@
         "collapse": false
     },
     {
-        "id": "92639f17.0d975",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "7b566a7c.f8e974",
+        "id": "e418ca12.0b5d98",
+        "type": "ui_group",
+        "name": "Perdon",
+        "tab": "e919f749.380228",
         "order": 4,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "377251d7.a9937e",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "7b566a7c.f8e974",
-        "order": 5,
-        "width": 5,
-        "height": 1
-    },
-    {
-        "id": "fc24b8b2.6e2528",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "7b566a7c.f8e974",
-        "order": 6,
-        "width": 5,
-        "height": 1
+        "disp": true,
+        "width": "10",
+        "collapse": false
     },
     {
         "id": "d648764d.80e298",
@@ -271,32 +210,15 @@
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 520,
+        "x": 510,
         "y": 60,
         "wires": [
             [
-                "bca06850.5a7858",
                 "76c2ee38.dec8",
                 "c289fed4.96272",
                 "dca608c3.ae5ca8"
             ]
         ]
-    },
-    {
-        "id": "bca06850.5a7858",
-        "type": "debug",
-        "z": "429ad46d.06bf9c",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 860,
-        "y": 60,
-        "wires": []
     },
     {
         "id": "76c2ee38.dec8",
@@ -310,24 +232,24 @@
         "active": true,
         "pass": false,
         "outputs": 0,
-        "x": 870,
-        "y": 100,
+        "x": 860,
+        "y": 60,
         "wires": []
     },
     {
         "id": "b85066b7.dd6f48",
         "type": "ui_text",
         "z": "429ad46d.06bf9c",
-        "group": "7b566a7c.f8e974",
-        "order": 3,
-        "width": 3,
+        "group": "41d201bf.153b3",
+        "order": 1,
+        "width": 8,
         "height": 1,
         "name": "",
-        "label": "text",
+        "label": "Hora",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 330,
-        "y": 220,
+        "x": 510,
+        "y": 700,
         "wires": []
     },
     {
@@ -335,8 +257,8 @@
         "type": "ui_gauge",
         "z": "429ad46d.06bf9c",
         "name": "",
-        "group": "7b566a7c.f8e974",
-        "order": 2,
+        "group": "41d201bf.153b3",
+        "order": 4,
         "width": 4,
         "height": 3,
         "gtype": "gage",
@@ -352,8 +274,8 @@
         ],
         "seg1": "65",
         "seg2": "80",
-        "x": 290,
-        "y": 260,
+        "x": 310,
+        "y": 160,
         "wires": []
     },
     {
@@ -362,8 +284,8 @@
         "z": "429ad46d.06bf9c",
         "name": "",
         "group": "41d201bf.153b3",
-        "order": 1,
-        "width": 6,
+        "order": 2,
+        "width": 8,
         "height": 6,
         "label": "chart",
         "chartType": "line",
@@ -393,37 +315,8 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 290,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6d36c383.b6121c",
-        "type": "ui_colour_picker",
-        "z": "429ad46d.06bf9c",
-        "name": "",
-        "label": "",
-        "group": "3c7584ca.e5ea8c",
-        "format": "hex",
-        "outformat": "string",
-        "showSwatch": true,
-        "showPicker": false,
-        "showValue": false,
-        "showHue": false,
-        "showAlpha": false,
-        "showLightness": true,
-        "square": "false",
-        "dynOutput": "false",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 510,
-        "y": 500,
+        "x": 310,
+        "y": 220,
         "wires": [
             []
         ]
@@ -435,7 +328,7 @@
         "name": "",
         "label": "",
         "group": "5f910634.44f3e8",
-        "order": 1,
+        "order": 4,
         "width": 0,
         "height": 0,
         "options": [
@@ -464,8 +357,8 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 510,
-        "y": 460,
+        "x": 370,
+        "y": 500,
         "wires": [
             []
         ]
@@ -495,8 +388,8 @@
         "officon": "",
         "offcolor": "",
         "animate": false,
-        "x": 530,
-        "y": 560,
+        "x": 350,
+        "y": 620,
         "wires": [
             []
         ]
@@ -506,8 +399,8 @@
         "type": "ui_media",
         "z": "429ad46d.06bf9c",
         "group": "7b566a7c.f8e974",
-        "name": "",
-        "width": 9,
+        "name": "Areta",
+        "width": 10,
         "height": 7,
         "order": 1,
         "category": "",
@@ -518,8 +411,8 @@
         "onstart": false,
         "scope": "local",
         "tooltip": "",
-        "x": 930,
-        "y": 300,
+        "x": 830,
+        "y": 440,
         "wires": [
             []
         ]
@@ -543,8 +436,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 710,
-        "y": 300,
+        "x": 670,
+        "y": 440,
         "wires": [
             [
                 "63b2f095.71435"
@@ -561,8 +454,8 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 610,
-        "y": 160,
+        "x": 790,
+        "y": 20,
         "wires": [
             []
         ]
@@ -571,7 +464,7 @@
         "id": "2d43d89.0e31c28",
         "type": "mqtt in",
         "z": "429ad46d.06bf9c",
-        "name": "Temp",
+        "name": "Temp2",
         "topic": "aprendiendonodered21/enrique/raspberrypi2/enrique/Temperatura",
         "qos": "2",
         "datatype": "auto",
@@ -579,8 +472,8 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 90,
-        "y": 260,
+        "x": 110,
+        "y": 160,
         "wires": [
             [
                 "c84bd35c.6b582",
@@ -592,7 +485,7 @@
         "id": "b74428fc.f74e68",
         "type": "mqtt in",
         "z": "429ad46d.06bf9c",
-        "name": "Temp2",
+        "name": "Temp1",
         "topic": "aprendiendonodered21/enrique/raspberrypi1/enrique/Temperatura",
         "qos": "2",
         "datatype": "auto",
@@ -600,11 +493,12 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 80,
-        "y": 340,
+        "x": 100,
+        "y": 240,
         "wires": [
             [
-                "12a3f0c9.9a412f"
+                "12a3f0c9.9a412f",
+                "231609d.e3e78f6"
             ]
         ]
     },
@@ -614,11 +508,11 @@
         "z": "429ad46d.06bf9c",
         "name": "",
         "group": "5f910634.44f3e8",
-        "order": 1,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": true,
-        "label": "button",
+        "label": "Actualiza imagen",
         "tooltip": "",
         "color": "{{payload}}",
         "bgcolor": "",
@@ -627,58 +521,14 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 350,
+        "x": 310,
         "y": 60,
         "wires": [
             [
-                "d648764d.80e298"
+                "d648764d.80e298",
+                "ac9cb0c7.c5ebe"
             ]
         ]
-    },
-    {
-        "id": "8082af76.c0428",
-        "type": "ui_button",
-        "z": "429ad46d.06bf9c",
-        "name": "cambia",
-        "group": "5f910634.44f3e8",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "label": "cambia color",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "red",
-        "payloadType": "str",
-        "topic": "image",
-        "topicType": "flow",
-        "x": 260,
-        "y": 160,
-        "wires": [
-            [
-                "3b4a40d8.9a1b6",
-                "e77eaf26.c25c5"
-            ]
-        ]
-    },
-    {
-        "id": "e77eaf26.c25c5",
-        "type": "debug",
-        "z": "429ad46d.06bf9c",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 420,
-        "y": 100,
-        "wires": []
     },
     {
         "id": "ed48e8a4.b85d58",
@@ -694,18 +544,18 @@
                 "vt": "str"
             }
         ],
-        "repeat": "60",
+        "repeat": "600",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 90,
-        "y": 160,
+        "x": 110,
+        "y": 60,
         "wires": [
             [
-                "8082af76.c0428"
+                "3b4a40d8.9a1b6"
             ]
         ]
     },
@@ -715,8 +565,8 @@
         "z": "429ad46d.06bf9c",
         "name": "",
         "events": "all",
-        "x": 280,
-        "y": 440,
+        "x": 460,
+        "y": 320,
         "wires": [
             []
         ]
@@ -727,21 +577,21 @@
         "z": "429ad46d.06bf9c",
         "name": "",
         "group": "5f910634.44f3e8",
-        "order": 6,
+        "order": 1,
         "width": 0,
         "height": 0,
-        "passthru": false,
-        "label": "ocultar",
+        "passthru": true,
+        "label": "Areta",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"Home_Fecha\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"Home_Perdon\"],\"show\":[\"Home_Areta\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 100,
-        "y": 440,
+        "x": 250,
+        "y": 320,
         "wires": [
             [
                 "24fda728.86d7b8"
@@ -754,21 +604,21 @@
         "z": "429ad46d.06bf9c",
         "name": "",
         "group": "5f910634.44f3e8",
-        "order": 7,
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "mostrar",
+        "label": "Perdon",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
         "icon": "",
-        "payload": "{\"group\":{\"show\":[\"Home_Fecha\"]}}",
+        "payload": "{\"group\":{\"hide\":[\"Home_Areta\"],\"show\":[\"Home_Perdon\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 110,
-        "y": 520,
+        "x": 260,
+        "y": 360,
         "wires": [
             [
                 "24fda728.86d7b8"
@@ -799,10 +649,207 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
-        "x": 460,
-        "y": 360,
+        "x": 350,
+        "y": 560,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "231609d.e3e78f6",
+        "type": "ui_gauge",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "group": "41d201bf.153b3",
+        "order": 3,
+        "width": 4,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Raspi1",
+        "label": "Grados",
+        "format": "{{value|number:2}} ºC",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "65",
+        "seg2": "80",
+        "x": 310,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "5ad8a319.0909fc",
+        "type": "inject",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 700,
+        "wires": [
+            [
+                "11495483.592dcb"
+            ]
+        ]
+    },
+    {
+        "id": "11495483.592dcb",
+        "type": "moment",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "topic": "",
+        "input": "",
+        "inputType": "msg",
+        "inTz": "Europe/Madrid",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "dddd, MMMM Do YYYY, h:mm:ss a",
+        "locale": "es",
+        "output": "",
+        "outputType": "msg",
+        "outTz": "Europe/Madrid",
+        "x": 320,
+        "y": 700,
+        "wires": [
+            [
+                "b85066b7.dd6f48"
+            ]
+        ]
+    },
+    {
+        "id": "ac9cb0c7.c5ebe",
+        "type": "http request",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "http://www.navarra.es/Templates/Navarra/Especificas/CamarasTrafico/CamaraTraficoHandler.ashx?Img=carreteras\\PERDON_ESTELLA_A_12_PK_13_150.JPG",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 470,
+        "y": 120,
+        "wires": [
+            [
+                "4fc529e2.bdfb78",
+                "cd660322.2ade1"
+            ]
+        ]
+    },
+    {
+        "id": "4fc529e2.bdfb78",
+        "type": "image",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 860,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "cd660322.2ade1",
+        "type": "change",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mimetype",
+                "pt": "msg",
+                "to": "image/jpeg",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 480,
+        "wires": [
+            [
+                "59a1aff3.29591"
+            ]
+        ]
+    },
+    {
+        "id": "59a1aff3.29591",
+        "type": "ui_media",
+        "z": "429ad46d.06bf9c",
+        "group": "e418ca12.0b5d98",
+        "name": "Perdon",
+        "width": 10,
+        "height": 7,
+        "order": 1,
+        "category": "",
+        "file": "",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 840,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6462334b.72002c",
+        "type": "inject",
+        "z": "429ad46d.06bf9c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "20a5af8e.ec8e5"
+            ]
         ]
     }
 ]

@@ -5,7 +5,8 @@
     "dependencies": {
         "node-red-contrib-image-output": "0.6.2",
         "node-red-contrib-ui-media": "1.2.0",
-        "node-red-dashboard": "2.29.0"
+        "node-red-dashboard": "2.29.0",
+        "node-red-contrib-moment": "4.0.0"
     },
     "node-red": {
         "settings": {
